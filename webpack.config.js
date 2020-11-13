@@ -6,7 +6,7 @@ const hostname = ip.address() || 'localhost';
 module.exports = {
   entry: './src/index.js',
   output: {path: path.join(__dirname, "/dist"),   
-  filename: "bundle.js"
+  filename: "bundle.jsx"
  },
  devServer: {
   contentBase: path.resolve(__dirname, './build'),

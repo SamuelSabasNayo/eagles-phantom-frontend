@@ -1,7 +1,12 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
 import App from './components/App';
 
 const title = 'React with Webpack and Babel';
-ReactDom.render(<App title={title} />, document.getElementById("root"));
+ReactDOM.render(
+    <Router>
+        <App title= { title } />
+    </Router>,
+document.getElementById('root'));
 module.hot.accept();

@@ -1,0 +1,11 @@
+env:
+    global:
+      - CC_TEST_REPORTER_ID=302c8475951e2b526df16096ee8bd270af86587b8ee67090b303823de5c54e0d
+
+language: node_js
+node_js:
+  - "stable"
+script:
+  - npm run test
+after_success: npm run coverage
+  
